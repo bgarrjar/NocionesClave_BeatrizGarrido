@@ -1,36 +1,44 @@
 # NocionesClave_BeatrizGarrido
 https://github.com/bgarrjar/NocionesClave_BeatrizGarrido.git
+
 1.Principales características del lenguaje C++
+
   Crea un programa simple que imprima "Hola Mundo" en la consola.
   Haz una función que tome dos números enteros como parámetros y devuelva su suma.
   Utiliza una variable global y muestra su valor dentro y fuera de una función.
 
 2.Programación orientada a objetos
+
   Crea una clase "Persona" que tenga atributos para el nombre, la edad y el género. Haz funciones para establecer y obtener estos valores.
   Extiende la clase "Persona" con una clase "Estudiante" que tenga un atributo adicional para el grado que está cursando.
   Crea un método en la clase "Estudiante" que muestre todos los detalles del estudiante.
 
 3.Entorno de desarrollo y archivo CMakeLists.txt
+
   Crea un nuevo proyecto en CLion e imprime "¡Hola CLion!" en la consola.
   Configura el archivo CMakeLists.txt para incluir una biblioteca externa.
   Crea un nuevo archivo de código en el proyecto y añádelo al archivo CMakeLists.txt.
 
 4.Organización de un programa C++
+
   Divide un programa en varias funciones y colócalas en diferentes archivos .cpp. Utiliza el archivo de encabezado .h para declarar las funciones.
   Crea un archivo de biblioteca estática .a con algunas funciones y utilízalo en tu programa.
   Crea un archivo de biblioteca dinámica .so (o .dll en Windows) con algunas funciones y utilízalo en tu programa.
 
 5.Preprocesador
+
   Define una constante con preprocesador y utilízala en tu programa.
   Crea una macro de preprocesador que calcule el área de un círculo.
   Utiliza la directiva #include para incluir un archivo de encabezado en tu programa.
 
 6.Elección de un compilador
+
   Configura CLion para que use el compilador GCC.
   Configura CLion para que use el compilador MSVC.
   Compara el rendimiento y los errores al compilar tu programa con diferentes compiladores.
 
 7.Enlazador
+
   Crea un programa que utilice funciones de una biblioteca estándar de C++, como <vector> o <iostream>, y asegúrate de que el enlazador puede encontrarla.
   Crea un programa que utilice funciones de una biblioteca externa, configura tu proyecto para que el enlazador pueda encontrarla.
   Prueba a cambiar la orden de enlazado de las bibliotecas y observa si el comportamiento de tu programa cambia.
@@ -38,6 +46,7 @@ https://github.com/bgarrjar/NocionesClave_BeatrizGarrido.git
 Relación paso a paso:
 
 1.Principales características del lenguaje C++
+
   Hola Mundo: Crea un nuevo proyecto en CLion. Dentro del archivo main.cpp, escribe el siguiente código:
 
       #include <iostream>
@@ -68,6 +77,7 @@ Relación paso a paso:
   std::cout << "Valor de g después de la función suma: " << g << std::endl;  
 
 2.Programación orientada a objetos
+
   Clase Persona: Crea un nuevo archivo en tu proyecto llamado "Persona.h". Dentro de este archivo, escribe el siguiente código:
 
       #ifndef PERSONA_H
@@ -161,6 +171,7 @@ Relación paso a paso:
       Ahora puedes crear objetos de la clase Estudiante en tu función int main() y llamar a la función mostrarDetalles().
 
 3.Entorno de desarrollo y archivo CMakeLists.txt
+
   Nuevo proyecto en CLion: Abre CLion y crea un nuevo proyecto. CLion creará automáticamente un archivo main.cpp con un programa de "Hola Mundo" y un archivo CMakeLists.txt. Puedes ejecutar este programa para      verificar que todo está funcionando correctamente.
   Configurar CMakeLists.txt: Supongamos que quieres agregar la biblioteca fmt a tu proyecto. Agregarías las siguientes líneas a tu archivo CMakeLists.txt:
 
@@ -177,6 +188,7 @@ Relación paso a paso:
   Nuevo archivo de código: Agrega un nuevo archivo de código a tu proyecto (por ejemplo, "nuevo.cpp"). Deberías agregar nuevo.cpp a la línea add_executable en tu archivo CMakeLists.txt. Luego puedes poner          código en "nuevo.cpp" y será parte de tu programa cuando lo compiles y ejecutes.
 
 4.Organización de un programa C++
+
   Varias funciones: Crea un nuevo archivo "funciones.cpp" en tu proyecto. En ese archivo, escribe una o más funciones, como:
 
   int suma(int a, int b) {
@@ -200,6 +212,7 @@ Relación paso a paso:
   Ahora puedes enlazar esta biblioteca a tu programa principal con target_link_libraries en tu archivo CMakeLists.txt.
 
 5. Preprocesador
+   
    Constante con preprocesador: Al principio de tu archivo main.cpp, agrega la siguiente línea:
 
   #define PI 3.14159
@@ -216,11 +229,13 @@ Relación paso a paso:
   Ahora puedes usar std::cout, std::cin, std::endl, etc. en tu código.
 
 6.Elección de un compilador
+
   Configurar CLion para usar GCC: Ve a "File > Settings > Build, Execution, Deployment > Toolchains". Haz clic en el signo más para agregar una nueva cadena de herramientas. Configura el compilador C y C++         para usar GCC. Haz clic en "OK" para guardar los cambios.
   Configurar CLion para usar MSVC: El proceso es similar al anterior, pero debes configurar el compilador C y C++ para usar MSVC en lugar de GCC. Ten en cuenta que MSVC solo está disponible en Windows.
   Comparar compiladores: Haz una copia de tu proyecto y configúralo para usar un compilador diferente. Observa si hay diferencias en el rendimiento o los errores al compilar y ejecutar tu programa.
 
 7.Enlazador
+
   Biblioteca estándar de C++: Tu programa ya está utilizando la biblioteca estándar de C++ si estás utilizando std::cout, std::cin, std::endl, etc. El enlazador puede encontrar estas funciones porque las           bibliotecas estándar de C++ se instalan con el compilador.
   Biblioteca externa: Supongamos que quieres usar la biblioteca fmt en tu proyecto. Agregarías las líneas correspondientes a tu archivo CMakeLists.txt, como se describió en el ejercicio 3b. El enlazador puede      encontrar la biblioteca fmt porque has configurado tu proyecto para descargarla y compilarla.
   Orden de enlace: En tu archivo CMakeLists.txt, la línea target_link_libraries determina el orden en que las bibliotecas se enlazan a tu programa. Si tienes problemas de enlace, puedes intentar cambiar el         orden de las bibliotecas.
