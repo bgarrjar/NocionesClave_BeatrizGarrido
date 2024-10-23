@@ -2,6 +2,8 @@
 
 #include "Estudiante.h"
 #include "Persona.h"
+#include <fmt/core.h>
+
 
 int suma(int a, int b) {
     return a + b;
@@ -30,6 +32,8 @@ int main() {
     estudiante1.setGenero("Masculino");
     estudiante1.setGrado("Segundo Año");
     estudiante1.mostrarDetalles();
+
+    fmt::print("Prueba con fmt");
 
     return 0;
 }
