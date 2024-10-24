@@ -21,6 +21,6 @@ int main()
     double area = AREA_CIRCULO(radio);
     std::cout << "El area del circulo con radio " << radio << " es " << area << std::endl;
 
-    /* Ejercicio 7: he probado el compilador que viene por defecto (GCC) y el programa funcionaba correctamente. Después, he probado a ca,biar al compilador de Visual Studio (MSVC) y el programa ha empezado a dar fallos, que al volver cambiar al de GCC han empezado a dar también.  
+    /* Ejercicio 6: he probado el compilador que viene por defecto (GCC) y el programa funcionaba correctamente. Después, he probado a cambiar al compilador de Visual Studio (MSVC) y el programa ha empezado a dar fallos, que al volver cambiar al de GCC han empezado a dar también.
     return 0;
 }
