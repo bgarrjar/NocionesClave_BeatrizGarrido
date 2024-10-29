@@ -21,10 +21,10 @@ int main()
     double area = AREA_CIRCULO(radio);
     std::cout << "El area del circulo con radio " << radio << " es " << area << std::endl;
 
-    /* Ejercicio 6: he probado el compilador que viene por defecto (GCC) y el programa funcionaba correctamente. Después, he probado a cambiar al compilador de Visual Studio (MSVC) y el programa ha empezado a dar fallos, que al volver cambiar al de GCC han empezado a dar también.
-    /* Ejercicio 7: el programa ya usa las bibliotecas standar de C++ como <iostream>
+    // Ejercicio 6: he probado el compilador que viene por defecto (GCC) y el programa funcionaba correctamente. Después, he probado a cambiar al compilador de Visual Studio (MSVC) y el programa ha empezado a dar fallos. La velocidad de compilado es muy parecida.
+    // Ejercicio 7: el programa ya usa las bibliotecas standar de C++ como <iostream>
 
-     */
+
 return 0;
 
 }
